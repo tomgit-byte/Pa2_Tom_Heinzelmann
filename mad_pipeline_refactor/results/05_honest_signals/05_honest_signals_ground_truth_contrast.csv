@@ -1,0 +1,16 @@
+metric,label,signal,smd_incorrect_minus_correct
+self_repetition,self repetition,Mimicry,-0.7587977353805597
+turn_evenness,turn evenness,Influence,-0.4902164376959093
+n_agent_turns,agent turns,Activity,-0.2921825000040752
+total_tokens,total tokens,Activity,-0.055365389172591754
+n_actors,actors,Influence,-0.022733954026127913
+participation_gini,participation Gini,Influence,0.0809055899823512
+cross_echo,cross speaker echo,Mimicry,0.0868287794525244
+dominant_actor_share,dominant actor share,Influence,0.1617671695765949
+mean_turn_tokens,mean tokens per turn,Activity,0.2297678874739668
+rhythm_regularity,rhythm regularity,Consistency,0.2425471654195037
+turn_gini,turn Gini,Influence,0.3152381496441269
+hub_share,hand off hub share,Influence,0.38949892391156243
+turn_length_cv,turn length CV,Consistency,0.40633694155524536
+agent_turn_ratio,agent turn ratio,Activity,0.6440095059045398
+topic_drift,topic drift,Consistency,0.8764209504813564

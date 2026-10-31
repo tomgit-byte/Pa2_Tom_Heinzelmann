@@ -1,0 +1,405 @@
+{
+  "judge_report": {
+    "status": "replayed",
+    "construct": "air",
+    "preset": "qwen_ibm",
+    "model": "qwen3.5-397b",
+    "n_units": 2011,
+    "n_verdicts": 2011,
+    "parse_rate": 0.9865738438587768,
+    "cache": "/Users/tomheinzelmann/Documents/IBM Praxiseinsätze/Pe4 mit Pa 2/mad_pipeline_refactor/data/judge_cache/air_labels.csv",
+    "mirror_guard": "clean"
+  },
+  "unit_inventory": [
+    {
+      "units": 671,
+      "mean_turn_position": 0.6378539493293591
+    },
+    {
+      "units": 751,
+      "mean_turn_position": 0.5918774966711052
+    },
+    {
+      "units": 589,
+      "mean_turn_position": 0.631578947368421
+    }
+  ],
+  "cd_baseline": [
+    {
+      "feature": "cd_deficit",
+      "n_pos": 42,
+      "n_neg": 436,
+      "mean_pos": 0.20121366728509585,
+      "mean_neg": 0.1270230152110886,
+      "AUC": 0.6173274355613805,
+      "cliffs_delta": 0.23465487112276096,
+      "p": 0.005164327660552907,
+      "verdict": "confirmed"
+    },
+    {
+      "feature": "cd_has_uncertainty",
+      "n_pos": 42,
+      "n_neg": 436,
+      "mean_pos": 1.0,
+      "mean_neg": 0.908256880733945,
+      "AUC": 0.5458715596330275,
+      "cliffs_delta": 0.09174311926605494,
+      "p": 0.04063166390044927,
+      "verdict": "confirmed"
+    },
+    {
+      "feature": "cd_uncertainty_density",
+      "n_pos": 42,
+      "n_neg": 436,
+      "mean_pos": 0.4085935889507318,
+      "mean_neg": 0.2617142923335584,
+      "AUC": 0.6366044124071647,
+      "cliffs_delta": 0.2732088248143294,
+      "p": 0.0022674342374510766,
+      "verdict": "confirmed"
+    },
+    {
+      "feature": "cd_clarification_rate",
+      "n_pos": 42,
+      "n_neg": 436,
+      "mean_pos": 0.22027674706246134,
+      "mean_neg": 0.1638715960390272,
+      "AUC": 0.5834425513324596,
+      "cliffs_delta": 0.16688510266491918,
+      "p": 0.06440714625767205,
+      "verdict": "flat"
+    },
+    {
+      "feature": "cd_terminal_unresolved",
+      "n_pos": 42,
+      "n_neg": 436,
+      "mean_pos": 0.0,
+      "mean_neg": 0.03211009174311927,
+      "AUC": 0.48394495412844035,
+      "cliffs_delta": -0.032110091743119296,
+      "p": 0.23981231360346655,
+      "verdict": "flat"
+    },
+    {
+      "feature": "cd_n_gap",
+      "n_pos": 42,
+      "n_neg": 436,
+      "mean_pos": 1.2619047619047619,
+      "mean_neg": 0.591743119266055,
+      "AUC": 0.6167267365661862,
+      "cliffs_delta": 0.2334534731323723,
+      "p": 0.005243822618135778,
+      "verdict": "confirmed"
+    },
+    {
+      "feature": "cd_n_hedge",
+      "n_pos": 42,
+      "n_neg": 436,
+      "mean_pos": 3.261904761904762,
+      "mean_neg": 1.6926605504587156,
+      "AUC": 0.707787243337702,
+      "cliffs_delta": 0.4155744866754041,
+      "p": 2.6713798434433333e-07,
+      "verdict": "confirmed"
+    },
+    {
+      "feature": "cd_n_query",
+      "n_pos": 42,
+      "n_neg": 436,
+      "mean_pos": 1.8571428571428572,
+      "mean_neg": 1.360091743119266,
+      "AUC": 0.5574486675404107,
+      "cliffs_delta": 0.11489733508082134,
+      "p": 0.20245662956280952,
+      "verdict": "flat"
+    },
+    {
+      "feature": "cd_n_events_scored",
+      "n_pos": 42,
+      "n_neg": 436,
+      "mean_pos": 6.380952380952381,
+      "mean_neg": 5.094036697247707,
+      "AUC": 0.5297619047619048,
+      "cliffs_delta": 0.059523809523809534,
+      "p": 0.4931572505500047,
+      "verdict": "flat"
+    }
+  ],
+  "judge_contrast": [
+    {
+      "feature": "air_deficit",
+      "n_pos": 42,
+      "n_neg": 435,
+      "mean_pos": 0.39132452644357407,
+      "mean_neg": 0.14152089282515246,
+      "AUC": 0.7457307060755337,
+      "cliffs_delta": 0.4914614121510674,
+      "p": 3.1945885958175074e-09,
+      "verdict": "confirmed"
+    },
+    {
+      "feature": "air_inject_rate",
+      "n_pos": 42,
+      "n_neg": 435,
+      "mean_pos": 0.4000907602098077,
+      "mean_neg": 0.1438503807063645,
+      "AUC": 0.747400109469075,
+      "cliffs_delta": 0.49480021893814996,
+      "p": 2.470495451238394e-09,
+      "verdict": "confirmed"
+    },
+    {
+      "feature": "air_silent_rate",
+      "n_pos": 42,
+      "n_neg": 435,
+      "mean_pos": 0.3132143429762477,
+      "mean_neg": 0.10144163176617536,
+      "AUC": 0.7177066228790366,
+      "cliffs_delta": 0.4354132457580733,
+      "p": 1.665332173931029e-08,
+      "verdict": "confirmed"
+    },
+    {
+      "feature": "air_contra_rate",
+      "n_pos": 42,
+      "n_neg": 435,
+      "mean_pos": 0.0868764172335601,
+      "mean_neg": 0.04240874894018911,
+      "AUC": 0.581800766283525,
+      "cliffs_delta": 0.1636015325670499,
+      "p": 0.0029110437249109497,
+      "verdict": "confirmed"
+    },
+    {
+      "feature": "air_flagged_rate",
+      "n_pos": 42,
+      "n_neg": 435,
+      "mean_pos": 0.025925925925925925,
+      "mean_neg": 0.0038604690328828254,
+      "AUC": 0.5399562123700055,
+      "cliffs_delta": 0.07991242474001092,
+      "p": 0.001005485871059118,
+      "verdict": "confirmed"
+    },
+    {
+      "feature": "air_mean_scope",
+      "n_pos": 42,
+      "n_neg": 435,
+      "mean_pos": 0.7484126984126984,
+      "mean_neg": 0.36660919540229886,
+      "AUC": 0.680295566502463,
+      "cliffs_delta": 0.36059113300492607,
+      "p": 7.901327277198675e-06,
+      "verdict": "confirmed"
+    },
+    {
+      "feature": "air_first_pos",
+      "n_pos": 42,
+      "n_neg": 435,
+      "mean_pos": 0.5136183040944945,
+      "mean_neg": 0.8173431441852496,
+      "AUC": 0.2535851122058019,
+      "cliffs_delta": -0.49282977558839625,
+      "p": 8.520494096423847e-10,
+      "verdict": "INVERTED"
+    },
+    {
+      "feature": "air_terminal_inject",
+      "n_pos": 42,
+      "n_neg": 435,
+      "mean_pos": 0.2619047619047619,
+      "mean_neg": 0.09425287356321839,
+      "AUC": 0.5838259441707717,
+      "cliffs_delta": 0.16765188834154343,
+      "p": 0.0008853610993139663,
+      "verdict": "confirmed"
+    },
+    {
+      "feature": "air_gated_2_2",
+      "n_pos": 42,
+      "n_neg": 435,
+      "mean_pos": 0.09182098765432098,
+      "mean_neg": 0.037709788896401475,
+      "AUC": 0.596688560481664,
+      "cliffs_delta": 0.19337712096332793,
+      "p": 0.0018111503894818989,
+      "verdict": "confirmed"
+    },
+    {
+      "feature": "air_gated_rate",
+      "n_pos": 42,
+      "n_neg": 435,
+      "mean_pos": 0.09340828924162257,
+      "mean_neg": 0.0383447095313221,
+      "AUC": 0.5971264367816091,
+      "cliffs_delta": 0.1942528735632183,
+      "p": 0.0017248512369554716,
+      "verdict": "confirmed"
+    }
+  ],
+  "judge_by_benchmark": [
+    {
+      "benchmark_name": "GSM",
+      "feature": "air_deficit",
+      "n_pos": 22,
+      "n_neg": 163,
+      "mean_pos": 0.312987012987013,
+      "mean_neg": 0.04553136025528663,
+      "AUC": 0.7420524261015059,
+      "cliffs_delta": 0.4841048522030118,
+      "p": 4.098792856664061e-07,
+      "verdict": "confirmed",
+      "n": 185
+    },
+    {
+      "benchmark_name": "GSM",
+      "feature": "air_gated_2_2",
+      "n_pos": 22,
+      "n_neg": 163,
+      "mean_pos": 0.0817099567099567,
+      "mean_neg": 0.01539585159217061,
+      "AUC": 0.6077802565532627,
+      "cliffs_delta": 0.21556051310652546,
+      "p": 0.0005415784065450199,
+      "verdict": "confirmed",
+      "n": 185
+    },
+    {
+      "benchmark_name": "MMLU",
+      "feature": "air_deficit",
+      "n_pos": 3,
+      "n_neg": 135,
+      "mean_pos": 0.36190476190476195,
+      "mean_neg": 0.11627807172251617,
+      "AUC": 0.945679012345679,
+      "cliffs_delta": 0.8913580246913579,
+      "p": 0.0048251243796455,
+      "verdict": "confirmed",
+      "n": 138
+    },
+    {
+      "benchmark_name": "MMLU",
+      "feature": "air_gated_2_2",
+      "n_pos": 3,
+      "n_neg": 135,
+      "mean_pos": 0.11428571428571428,
+      "mean_neg": 0.055758377425044095,
+      "AUC": 0.654320987654321,
+      "cliffs_delta": 0.308641975308642,
+      "p": 0.2590817611856432,
+      "verdict": "flat",
+      "n": 138
+    },
+    {
+      "benchmark_name": "Olympiad",
+      "feature": "air_deficit",
+      "n_pos": 17,
+      "n_neg": 137,
+      "mean_pos": 0.49789420818832586,
+      "mean_neg": 0.2806017297429921,
+      "AUC": 0.7065264061829111,
+      "cliffs_delta": 0.41305281236582214,
+      "p": 0.0033216034862825726,
+      "verdict": "confirmed",
+      "n": 155
+    },
+    {
+      "benchmark_name": "Olympiad",
+      "feature": "air_gated_2_2",
+      "n_pos": 17,
+      "n_neg": 137,
+      "mean_pos": 0.10094148770619357,
+      "mean_neg": 0.04647338254036407,
+      "AUC": 0.6176470588235294,
+      "cliffs_delta": 0.23529411764705888,
+      "p": 0.018979990474573633,
+      "verdict": "confirmed",
+      "n": 155
+    }
+  ],
+  "mirror_test": {
+    "n": 477,
+    "pos": 42,
+    "neg": 435,
+    "lr_stat": 24.462577921943762,
+    "lr_df": 1,
+    "p": 7.576725264625445e-07,
+    "mcfadden_null": 0.05951313663569768,
+    "mcfadden_full": 0.14555946278061904,
+    "coefs": {
+      "const": -2.3656334141987037,
+      "cd_deficit": 0.5626128979052156,
+      "air_deficit": 2.8636720133405342
+    },
+    "pvals": {
+      "const": 1.20896812408172e-20,
+      "cd_deficit": 0.5449662440180902,
+      "air_deficit": 2.078150883632244e-06
+    },
+    "cv_auroc_null": 0.6069239189928844,
+    "cv_auroc_full": 0.7350301039956212,
+    "delta_auroc": 0.12810618500273674
+  },
+  "mirror_test_gated": {
+    "n": 477,
+    "pos": 42,
+    "neg": 435,
+    "lr_stat": 10.338807542984057,
+    "lr_df": 1,
+    "p": 0.0013026213836418588,
+    "mcfadden_null": 0.05951313663569768,
+    "mcfadden_full": 0.09587955756777633,
+    "coefs": {
+      "const": -2.2910963834458125,
+      "cd_deficit": 1.8638744516847632,
+      "air_gated_2_2": 4.037318647803614
+    },
+    "pvals": {
+      "const": 1.792949363711362e-19,
+      "cd_deficit": 0.030747718626812408,
+      "air_gated_2_2": 0.0006996144786868573
+    },
+    "cv_auroc_null": 0.6069239189928844,
+    "cv_auroc_full": 0.6986042692939245,
+    "delta_auroc": 0.09168035030104005
+  },
+  "non_mirror_check": [
+    {
+      "feature": "air_deficit",
+      "n_pos": 1,
+      "n_neg": 476,
+      "mean_pos": 0.3333333333333333,
+      "mean_neg": 0.1631594225971389,
+      "AUC": null,
+      "cliffs_delta": null,
+      "p": null,
+      "verdict": "not testable",
+      "code": "2.4"
+    },
+    {
+      "feature": "air_deficit",
+      "n_pos": 154,
+      "n_neg": 323,
+      "mean_pos": 0.33688875458355977,
+      "mean_neg": 0.0808555736337561,
+      "AUC": 0.7477182260463994,
+      "cliffs_delta": 0.49543645209279874,
+      "p": 6.853641467640517e-23,
+      "verdict": "confirmed",
+      "code": "2.6"
+    },
+    {
+      "feature": "air_deficit",
+      "n_pos": 53,
+      "n_neg": 424,
+      "mean_pos": 0.20700202600868525,
+      "mean_neg": 0.1580804507337526,
+      "AUC": 0.5902011391954433,
+      "cliffs_delta": 0.18040227839088652,
+      "p": 0.01594197750373755,
+      "verdict": "confirmed",
+      "code": "1.3"
+    }
+  ],
+  "gold_template": "/Users/tomheinzelmann/Documents/IBM Praxiseinsätze/Pe4 mit Pa 2/mad_pipeline_refactor/results/analsis2/air_gold_template.csv"
+}

@@ -1,0 +1,13 @@
+member,code,window,standardised,framework,metric,beta,se,p,declared,observed,flag
+1,2.2,p100,False,pooled,question_rate,3.697131007202398,0.9351521177212166,7.701381565192721e-05,positive,positive,"agrees with a discovery informed restatement, not the taxonomy"
+1,2.2,p100,False,pooled,first_output_pos,-1.4832840626168526,0.5790436640075585,0.010418823015129877,negative,negative,agrees with the declared direction
+2,2.3,p100,False,pooled,min_task_sim,-0.5743032030918163,1.0685386122316556,0.5909457454108547,negative,negative,agrees with the declared direction
+2,2.3,p100,False,pooled,drift,-3.536237392328861,0.7699698146235701,4.375559471451165e-06,positive,negative,CONTRARY to the declared direction
+3,2.2,p50,False,pooled,question_rate,1.5159955549030308,0.5592111690124472,0.00670900055462429,positive,positive,"agrees with a discovery informed restatement, not the taxonomy"
+3,2.2,p50,False,pooled,first_output_pos,-1.7810439853241586,0.4904021880009638,0.00028144828331273786,negative,negative,agrees with the declared direction
+4,2.3,p50,False,pooled,min_task_sim,-10.008334626784654,1.346789466225129,1.0757290338224648e-13,negative,negative,agrees with the declared direction
+4,2.3,p50,False,pooled,drift,1.4699122349130052,1.1766124421197695,0.21156459358332946,positive,positive,agrees with the declared direction
+5,2.3,p100,True,pooled,min_task_sim,-0.1254295633268846,0.1169118180756958,0.2833356619126225,negative,negative,agrees with the declared direction
+5,2.3,p100,True,pooled,drift,-0.06731456607021306,0.10449189035215502,0.5194402265741012,positive,negative,CONTRARY to the declared direction
+6,2.3,p50,True,pooled,min_task_sim,-1.3490043970611691,0.18043365627430014,7.635335302732502e-14,negative,negative,agrees with the declared direction
+6,2.3,p50,True,pooled,drift,0.22752395422805793,0.20640450179989656,0.2703222746394127,positive,positive,agrees with the declared direction

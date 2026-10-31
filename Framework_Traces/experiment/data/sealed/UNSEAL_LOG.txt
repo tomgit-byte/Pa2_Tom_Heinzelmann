@@ -1,0 +1,25 @@
+# Append-only provenance log for data/sealed/.
+# One line per event: UTC timestamp, event, sha256 of the sealed table, note.
+# The first UNSEALED line is the moment the test half was opened; FREEZE.md
+# must be committed before it.
+#
+# ORDERING DEFECT, recorded 2026-08-20 rather than repaired. Line 12 carries the
+# hand-written stamp 2026-08-19T00:00:00Z and therefore sits BEFORE line 13's
+# 2026-08-18T23:05:57Z, but the degeneracy read on line 13 happened FIRST. The lines are
+# left exactly as written: an append-only log is not corrected by rewriting it, and both
+# events are fully disclosed, so the defect costs ordering and nothing else. Every line
+# appended from 2026-08-20 onward is machine-stamped and chronology-checked by
+# src/splits.py::_append_log, which refuses an out-of-order append.
+2026-08-18T09:03:32Z	SEALED	e7eb2f3b7ea079e3684a41e54f173caddd932dec2073951941937bd149894c20	625 test rows, 69 columns
+2026-08-18T09:14:03Z	SEALED	e7eb2f3b7ea079e3684a41e54f173caddd932dec2073951941937bd149894c20	625 test rows, 69 columns
+2026-08-18T10:35:09Z	SEALED	73a0d003c295eb58590e00a7a7b21cbc88544f74af0e30157cf22155eb7e1be9	625 test rows, 74 columns
+2026-08-18T10:35:40Z	SEALED	c8554db8989205b25d9ae42db614930dca38333ebaa4f261cffb3bbb411e6b80	625 test rows, 74 columns
+2026-08-18T12:52:40Z	SEALED	b1af4a6e6a6b7ae7b643b6a5f68c193565f5135882c71aa224ba882b34937431	625 test rows, 74 columns
+2026-08-18T12:53:11Z	SEALED	b1af4a6e6a6b7ae7b643b6a5f68c193565f5135882c71aa224ba882b34937431	625 test rows, 74 columns
+2026-08-18T14:07:01Z	SEALED	5a10e7bf21659b0454d99a62a1828477e319b2d4177ba7c0e7ff5e2d5a3717f3	625 test rows, 74 columns
+2026-08-19T00:00:00Z	INSPECTED	5a10e7bf21659b0454d99a62a1828477e319b2d4177ba7c0e7ff5e2d5a3717f3	AUTHORISED LABEL-FREE READ of 3 control/structure columns (framework, n_agents, log_events) via pd.read_parquet, bypassing the unseal loader. Purpose: check test-half n_agents falls inside the discovery range before freezing the control block. Seen: MetaGPT {2,4}; Magentic {2:3,3:87,4:62,5:35,6:8}. No label column and no metric column read. Table unmodified (hash unchanged). NOT an unsealing.
+2026-08-18T23:05:57Z	INSPECTED	5a10e7bf21659b0454d99a62a1828477e319b2d4177ba7c0e7ff5e2d5a3717f3	AUTHORISED LABEL-FREE READ of 46 column(s) [framework, clarify_before_output_p25, clarify_before_output_p50, clarify_before_output_p75, clarify_before_output_p100, clarify_before_output_last10, drift_p25, drift_p50, drift_p75, drift_p100, drift_last10, first_output_pos_p25, first_output_pos_p50, first_output_pos_p75, first_output_pos_p100, first_output_pos_last10, keyword_coverage_p25, keyword_coverage_p50, keyword_coverage_p75, keyword_coverage_p100, keyword_coverage_last10, min_task_sim_p25, min_task_sim_p50, min_task_sim_p75, min_task_sim_p100, min_task_sim_last10, passive_rate_p25, passive_rate_p50, passive_rate_p75, passive_rate_p100, passive_rate_last10, question_rate_p25, question_rate_p50, question_rate_p75, question_rate_p100, question_rate_last10, reply_latency_p25, reply_latency_p50, reply_latency_p75, reply_latency_p100, reply_latency_last10, unanswered_share_p25, unanswered_share_p50, unanswered_share_p75, unanswered_share_p100, unanswered_share_last10] via inspect_sealed.py. Purpose: apply the EXTENDED degeneracy rule (modal share >= 0.95 at every window) to the half where the metrics will be applied, as required before the freeze. Seen: full marginal distributions of all 45 metric columns on the test half (modal share, distinct-value counts, means) -- NOT only the modal-share summary. Consequences recorded in FREEZE.md: unanswered_share and clarify_before_output excluded on MetaGPT degeneracy; the 428/430 = 1/6 MetaGPT arithmetic; Magentic unanswered_share 31 distinct values. No label column read, no metric-label association computed. No label column read. Table unmodified (hash unchanged). NOT an unsealing.
+2026-08-19T15:11:40Z	SEALED	5a10e7bf21659b0454d99a62a1828477e319b2d4177ba7c0e7ff5e2d5a3717f3	625 test rows, 74 columns
+2026-08-19T23:02:26Z	VERIFIED	5a10e7bf21659b0454d99a62a1828477e319b2d4177ba7c0e7ff5e2d5a3717f3	Seal hash re-checked while separating verification from state change (part C). Table unmodified. NOT a state change and NOT an unsealing.
+2026-08-20T09:17:32Z	SEALED	5a10e7bf21659b0454d99a62a1828477e319b2d4177ba7c0e7ff5e2d5a3717f3	625 test rows, 74 columns
+2026-09-20T18:05:18Z	UNSEALED	5a10e7bf21659b0454d99a62a1828477e319b2d4177ba7c0e7ff5e2d5a3717f3	notebooks/02_confirmation.ipynb, confirmatory run

@@ -1,0 +1,16 @@
+code,window,framework,n,pos,metric,beta,p,declared,observed,note
+2.2,p100,AG2,597,52,question_rate,3.4401746257187367,0.00030704354975311305,positive,positive,
+2.2,p100,AG2,597,52,first_output_pos,-1.443830192113646,0.05423419330387564,negative,negative,
+2.2,p100,ChatDev,326,39,question_rate,7.214086874912158,0.03334566117170342,positive,positive,
+2.2,p100,ChatDev,326,39,first_output_pos,-0.6998678261016275,0.30910202690746114,negative,negative,
+2.3,p100,AG2,262,18,min_task_sim,3.6472164425435767,0.061069917193124115,negative,positive,
+2.3,p100,AG2,262,18,drift,-4.9963954597595395,8.872782016764469e-05,positive,negative,
+2.3,p100,ChatDev,326,151,min_task_sim,-5.816379670518292,7.126121906818853e-06,negative,negative,
+2.3,p100,ChatDev,326,151,drift,2.6068725496678984,0.04422247335255822,positive,positive,
+2.2,p50,AG2,597,52,question_rate,1.134732268545709,0.04416835298441208,positive,positive,
+2.2,p50,AG2,597,52,first_output_pos,-2.344189904352154,0.00035481264054498416,negative,negative,
+2.2,p50,ChatDev,326,39,question_rate,5.845336716261771,0.0008812311833857727,positive,positive,
+2.2,p50,ChatDev,326,39,first_output_pos,-0.17067139272028659,0.7995395677142191,negative,negative,
+2.3,p50,AG2,9,3,,,,,,too thin to fit
+2.3,p50,ChatDev,326,151,min_task_sim,-10.309828828991748,4.255717157101042e-15,negative,negative,
+2.3,p50,ChatDev,326,151,drift,-0.1363561088370572,0.8551158911844993,positive,negative,
