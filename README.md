@@ -14,16 +14,16 @@ The results come from two implementations of the analysis. Each keeps its own fo
 
 ```text
 .
-├── Framework_Traces/experiment/        experiment pipeline: pre-registered confirmation
+├── Framework_Traces/experiment/      experiment pipeline (confirmation)
 │   ├── notebooks/02_confirmation.ipynb
-│   └── data/sealed/UNSEAL_LOG.txt      provenance log of the sealed test table (Appendix 2/1)
-└── mad_pipeline_refactor/              notebook pipeline: all other results
-    ├── notebooks/                      the ten notebooks listed below
-    ├── results/<notebook>/             cited tables, figures, result files and run manifests
-    ├── tools/pipeline_src/             prereg.py and honest_signals.py
+│   └── data/sealed/UNSEAL_LOG.txt    provenance log (Appendix 2/1)
+└── mad_pipeline_refactor/            notebook pipeline (all other results)
+    ├── notebooks/                    the ten notebooks listed below
+    ├── results/<notebook>/           cited tables, figures, results, manifests
+    ├── tools/pipeline_src/           prereg.py and honest_signals.py
     └── data/
-        ├── frozen/                     metrics_discovery.parquet
-        └── sealed/                     unseal logs of the notebook pipeline (Appendix 2/2)
+        ├── frozen/                   metrics_discovery.parquet
+        └── sealed/                   unseal logs (Appendix 2/2)
 ```
 
 ## Finding a file cited in the thesis
