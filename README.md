@@ -36,21 +36,21 @@ File and folder names are kept exactly as the thesis cites them.
 
 ## Notebooks used in the thesis
 
-| Notebook | Corpus | Traces | Run (UTC) | Used in |
-|---|---|--:|---|---|
-| `02_confirmation` (experiment pipeline) | MetaGPT, Magentic One | 625 | 2026-09-20 | Sections 4.3, 4.4; Appendix 3 |
-| `01_discovery` | ChatDev, AG2 | 927 | 2026-10-07 | Section 4.2; Appendix 3 |
-| `05_honest_signals` | all frameworks | 1,642 | 2026-10-07 | Section 3.3; Appendix 5 |
-| `07_network_centrality` | all frameworks | 1,642 | 2026-10-07 | Section 3.3; Appendix 5 |
-| `MAST_2_5_Metrik` | all frameworks | 1,642 | 2026-10-07 | Appendix 4/1 (exploratory code 2.5) |
-| `analysis_2_2_clarification_AG2_Claude` | AG2, Claude | 193 | 2026-10-07 | Section 5.2; Appendix 4/2 |
-| `analysis_2_2_clarification_AG2_GPT-4o` | AG2, GPT-4o | 236 | 2026-10-07 | Section 5.2; Appendix 4/2 |
-| `analysis_2_3_task_derailment_AG2_Claude` | AG2, Claude | 193 | 2026-10-07 | Section 5.2; Appendix 4/3 |
-| `analysis_2_3_task_derailment_AG2_GPT-4o` | AG2, GPT-4o | 236 | 2026-10-07 | Section 5.2; Appendix 4/3 |
-| `analysis_cgd` | AG2 training half | 478 | 2026-10-07 | Section 5.3; Appendix 4/4 |
-| `analsis2` | AG2 training half | 478 | 2026-10-07 | Section 5.3; Appendix 4/4 |
+| Notebook | Corpus | Traces | Used in |
+|---|---|--:|---|
+| `02_confirmation` (experiment pipeline) | MetaGPT, Magentic One | 625 | Sections 4.3, 4.4; Appendix 3 |
+| `01_discovery` | ChatDev, AG2 | 927 | Section 4.2; Appendix 3 |
+| `05_honest_signals` | all frameworks | 1,642 | Section 3.3; Appendix 5 |
+| `07_network_centrality` | all frameworks | 1,642 | Section 3.3; Appendix 5 |
+| `MAST_2_5_Metrik` | all frameworks | 1,642 | Appendix 4/1 (exploratory code 2.5) |
+| `analysis_2_2_clarification_AG2_Claude` | AG2, Claude | 193 | Section 5.2; Appendix 4/2 |
+| `analysis_2_2_clarification_AG2_GPT-4o` | AG2, GPT-4o | 236 | Section 5.2; Appendix 4/2 |
+| `analysis_2_3_task_derailment_AG2_Claude` | AG2, Claude | 193 | Section 5.2; Appendix 4/3 |
+| `analysis_2_3_task_derailment_AG2_GPT-4o` | AG2, GPT-4o | 236 | Section 5.2; Appendix 4/3 |
+| `analysis_cgd` | AG2 training half | 478 | Section 5.3; Appendix 4/4 |
+| `analsis2` | AG2 training half | 478 | Section 5.3; Appendix 4/4 |
 
-`02_confirmation` is in `Framework_Traces/experiment/notebooks/`, all others are in `mad_pipeline_refactor/notebooks/`. `Claude` and `GPT-4o` in a name denote the language model that produced the AG2 traces of that subset. Appendix 1 of the thesis (Artefact inventory) lists the same notebooks.
+`02_confirmation` is in `Framework_Traces/experiment/notebooks/`, all others are in `mad_pipeline_refactor/notebooks/`. `Claude` and `GPT-4o` in a name denote the language model that produced the AG2 traces of that subset. The confirmation ran on 2026-09-20, all notebooks of the notebook pipeline on 2026-10-07 (UTC); their `manifest.json` files record the exact times. Appendix 1 of the thesis (Artefact inventory) lists the same notebooks.
 
 Every notebook of the notebook pipeline is self-contained. It carries the generated pipeline code inline and writes its tables, a JSON result file, its figures and a `manifest.json` (timestamps, seed, library versions) to `results/<notebook>/`. This repository keeps only the files the thesis cites.
 
